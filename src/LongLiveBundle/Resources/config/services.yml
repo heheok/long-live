@@ -1,0 +1,4 @@
+services:
+#    longlive_status.example:
+#        class: LongLiveBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

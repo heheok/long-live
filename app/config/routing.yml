@@ -1,0 +1,3 @@
+longlive_status:
+    resource: "@LongLiveBundle/Resources/config/routing.yml"
+    prefix:   /

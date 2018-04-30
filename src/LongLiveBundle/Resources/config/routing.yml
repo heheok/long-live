@@ -1,0 +1,9 @@
+longlive_status_homepage:
+    path:     /
+    defaults: { _controller: LongLiveBundle:Default:index }
+longlive_status_logs:
+    path:     /logs
+    defaults: { _controller: LongLiveBundle:Default:logs }
+longlive_status_day:
+    path:     /day
+    defaults: { _controller: LongLiveBundle:Default:day }
