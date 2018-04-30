@@ -29,8 +29,11 @@ How it Works?
     ```bin/console doctrine:schema:create```
 
 Now you are ready to go! As an example, let's create a rule to check if google.com is up;
+
 ```bin/console status:check --add```
+
 This command will start a prompt series for you to answer couple of simple questions to get you up and running in no time.
+
 ```
 Mandatory Please enter a name for your rule (alphanumeric) : GOOGLE
 Mandatory Please enter the URL of the service you want to check : https://www.google.com
@@ -47,9 +50,11 @@ Rule GOOGLE added succesfully. You can use it now..
 ```
 
 As you can see, your rule is set, and ready to go. On order to check it you can use the following command;
+
 ```bin/console status:check GOOGLE```
 
 You should get something like this as a response;
+
 ```
 +--------+-------------+----------------+-------------+---------------------+
 | RuleID | Status Code | Check For Clue | Clue Found? | Total Response Time |
@@ -60,11 +65,14 @@ You should get something like this as a response;
 
 But who needs a command line tool for manually calling couple of predefined rules? What good is it?
 Ok, the answer is simple, you can add more rules to your database, and then, you can call all of them like this;
+
 ```bin/console status:check --all```
 
 For all the available options and capabilities, you can check;
+
 ```bin/console status:check --help```
 This is the result;
+
 ```
 Usage:
   status:check [options] [--] [<ruleName>]
