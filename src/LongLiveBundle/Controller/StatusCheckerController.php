@@ -393,6 +393,9 @@ class StatusCheckerController extends Controller{
                     CURLOPT_IPRESOLVE => CURL_IPRESOLVE_V4
             ];
         } 
+        if (defined('CURLOPT_SSLVERSION') && defined('CURL_SSLVERSION_TLSv1_2')){
+            $curlSettings[CURLOPT_SSLVERSION] = CURL_SSLVERSION_TLSv1_2;
+        }
 
         try {
             $res = $client->request('GET', $url, [
